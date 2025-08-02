@@ -1,0 +1,3 @@
+
+
+Props -> data that we sent from component 1 to 2
