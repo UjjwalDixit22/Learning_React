@@ -1,0 +1,8 @@
+
+
+UseState HOok -> when you create any component it will have its state as we have created a counter app so count variable is its state as how many times we have clicked count as a guy with a milllion dollar milllion dollar is its state
+
+
+it provides state variable and state function
+    const [count , setCount] = useState(0);
+here initially we have stored 0 in count state variable as we have to change the value then setcount(12) (func) we can change like this.
