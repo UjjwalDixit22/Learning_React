@@ -1,5 +1,5 @@
 
-
+Counter app
 UseState HOok -> when you create any component it will have its state as we have created a counter app so count variable is its state as how many times we have clicked count as a guy with a milllion dollar milllion dollar is its state
 
 

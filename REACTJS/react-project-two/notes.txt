@@ -1,4 +1,6 @@
 
 
+
+Props
 Props -> data that we sent from component 1 to 2
 Hooks -> Features utilities provided by react are implemented and used by hooks

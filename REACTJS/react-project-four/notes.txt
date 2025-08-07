@@ -1,0 +1,11 @@
+
+
+Props as Children and function
+<Card name = "UjjwalDixit">
+      <h1>Best WEBDEV COURSE</h1>
+      <p>Trying to be consistent in this</p>
+      <p>Will complete the course soon</p>
+      </Card>
+      b/w cards this is Children when you want to create higher order component or wrapper the we can utilise props.Children
+
+      <Card children = "Mein ek children hoon"></Card>
