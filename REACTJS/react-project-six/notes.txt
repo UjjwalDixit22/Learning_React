@@ -1,0 +1,16 @@
+Conditional rendering 
+
+Bases on some conditions youwil render the component,element,tags
+
+if a user is already logged in then you will try to show logout btn else log in btn in Conditional rendering
+4ways -> if-else,ternary operator, logical operator , early returned
+
+
+In app.jsx,
+<></> is shorthand for <React.Fragment></React.Fragment>.
+
+Meaning:
+It’s a wrapper for grouping multiple JSX elements without adding extra HTML tags to the DOM.
+
+Useful when you need to return more than one element but don’t want an unnecessary <div> or <span>.
+
