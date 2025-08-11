@@ -1,0 +1,57 @@
+
+<button onClick={alert("Button was clicked")}>Click MEE</button>
+
+Don't do this as it will immeadiately invoke and without even clicking it will show alert so use arrow function.. as arrow function passes refernce 
+
+stopPropagation() → stops the event from reaching parent elements.
+e.stopPropagation() (note: capital “P”, not stoppropogation) is an event method that tells the browser:
+
+“Don’t pass this event up to parent elements.”
+
+Why it’s used
+In the browser, events bubble by default:
+
+The event happens on the target element.
+
+It then “bubbles up” to parent elements, triggering their event listeners too.
+
+stopPropagation() prevents this bubbling.
+
+Event handling 
+event.preventDefault(); is a JavaScript method that tells the browser:
+
+"Hey, don’t do the default action you normally do for this event."
+
+Why it’s used
+Many browser events have default behaviors:
+
+Clicking a link (<a href="..." />) → navigates to another page.
+
+Submitting a form (<form>) → reloads the page.
+
+Dragging & dropping something → opens the file in the browser.
+
+If you don’t want that default action to happen, you use:
+
+event.preventDefault();
+Example in React form
+function MyForm() {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // stops page reload
+    console.log("Form submitted without reloading");
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" />
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+Without preventDefault(), the form would refresh the whole page when submitted.
+
+Key difference from stopPropagation()
+preventDefault() → stops default browser action.
+
+stopPropagation() → stops the event from bubbling up to parent elements.
+
